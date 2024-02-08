@@ -3,8 +3,8 @@ body {
     margin: 0; /*Pour enlever les marges*/
     padding: 0; /*Pour enlever les paddings*/
     box-sizing: border-box; /*Pour que les éléments soient bien dimensionnés*/
-    background: rgb(0,255,244);
-    background: linear-gradient(90deg, rgba(0,255,244,1) 0%, rgba(0,0,255,1) 100%);
+    background: rgb(0,0,255);
+    background: linear-gradient(90deg, rgba(0,0,255,1) 0%, rgba(0,255,244,1) 100%);
     color: white; /*Pour que le texte soit blanc*/
     overflow-x: hidden; /*Pour que le scroll soit utilisable*/
 }
@@ -288,7 +288,7 @@ main {
 }
 
 .SISR {
-    border: 3px solid #2626ff;
+    border: 3px solid rgb(38,231,246);
     border-radius: 25px;
     width: 509px;
     padding: 30px;
@@ -297,7 +297,7 @@ main {
 }
 
 .SLAM {
-    border:  3px solid rgb(38,231,246);
+    border:  3px solid #2626ff;
     border-radius: 25px;
     width: 509px;
     padding: 30px;
@@ -396,13 +396,36 @@ main {
     height: 100vh; /*Prend toute la hauteur de l'écran*/
 }
 
+#projet div {
+    margin: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 25px;
+    /* Background Transparent */
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.6px);
+    -webkit-backdrop-filter: blur(9.6px);
+}
+
+#projet div h2 {
+    margin: 20px;
+}
+
+#projet div ul {
+    list-style: none;
+}
+
+#projet div ul li {
+    margin: 20px;
+}
+
 #projet div h1 {
     display: none;
 }
 
 #projet div ul li a {
-    text-decoration: none;
-    color: blue;
+    color: white;
 } 
 
 /* Section Contact */
