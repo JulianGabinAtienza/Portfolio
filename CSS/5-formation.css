@@ -1,0 +1,69 @@
+/* Section formation */
+
+#formation {
+    width: 100vw; /*Prend toute la longeur de l'écran*/
+    height: 100vh; /*Prend toute la hauteur de l'écran*/
+}
+
+#formation h1 {
+    display: none;
+}
+
+.formation {
+    display: flex; /*Pour que les éléments soient alignés horizontalement*/
+    justify-content: center; /*Pour que les éléments soient centrés horizontalement*/
+    align-items: center; /*Pour que les éléments soient centrés verticalement*/
+    flex-direction: column; /*Pour que les éléments soient alignés horizontalement*/
+    border-radius: 30px;
+    margin: 50px;
+    /* Background Transparent */
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.6px);
+    -webkit-backdrop-filter: blur(9.6px);
+}
+
+.formation div {
+    text-align: center;
+    margin: 10px;
+}
+
+.formation .ecole {
+    display: flex;
+    justify-content: center; /* Aligns the elements with space between them */
+    align-items: center;
+    flex-direction: row;
+}
+
+.formation .ecole h3 {
+    margin: 20px;
+}
+
+.formation .Linkedin {
+    display: flex;
+    justify-content: center; /* Aligns the elements with space between them */
+    align-items: center;
+    flex-direction: row;
+}
+
+.formation .Linkedin h3 {
+    margin: 20px;
+}
+
+#formation h1 {
+    display: none;
+}
+
+.formation h2 {
+    margin-top: 20px;
+}
+
+.formation .ecole h3 a {
+    text-decoration: none;
+    color: blue;
+}
+
+.formation .Linkedin h3 a {
+    text-decoration: none;
+    color: blue;
+}

@@ -1,0 +1,31 @@
+body {
+    font-family: 'Roboto', sans-serif; /*Pour que le texte soit en Roboto*/
+    margin: 0; /*Pour enlever les marges*/
+    padding: 0; /*Pour enlever les paddings*/
+    box-sizing: border-box; /*Pour que les éléments soient bien dimensionnés*/
+    background: blue; /*Pour que le background soit bleu*/
+    background: linear-gradient(90deg, blue 0%, var(--turquoise) 100%);
+    color: white; /*Pour que le texte soit blanc*/
+    overflow-x: hidden; /*Pour que le scroll soit utilisable*/
+}
+
+::-webkit-scrollbar {
+    width: 0; /* Hide the scrollbar */
+}
+
+h2 {
+    margin-block-start: 0; /*Pour enlever les marges*/
+    margin-block-end: 0; /*Pour enlever les marges*/
+}
+
+h3 {
+    margin-block-start: 0; /*Pour enlever les marges*/
+    margin-block-end: 0; /*Pour enlever les marges*/
+}
+
+/* Main */
+
+main {
+    width: 100vw; /*Prend toute la longeur de l'écran*/
+    height: 100vw; /*Prend toute la hauteur de l'écran*/
+}

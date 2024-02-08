@@ -1,0 +1,21 @@
+/* Section Intro */
+
+#Introduction {
+    width: 100vw; /*Prend toute la longeur de l'écran*/
+    height: 100vh; /*Prend toute la hauteur de l'écran*/
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Align items horizontally */
+}
+
+#Introduction img {
+    width: 200px; /*Pour que l'image ait une largeur de 200px*/
+    height: 255px; /*Pour que l'image ait une hauteur de 200px*/
+    border-radius: 35%; /*Pour que l'image soit un cercle*/
+    margin-bottom: 20px; /*Pour que l'image soit espacée de 20px en bas*/
+}
+
+#Introduction h1 {
+    text-align: center; /* Center the h1 */
+}

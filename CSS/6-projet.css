@@ -1,0 +1,38 @@
+/* Section Projet */
+
+#projet {
+    width: 100vw; /*Prend toute la longeur de l'écran*/
+    height: 100vh; /*Prend toute la hauteur de l'écran*/
+}
+
+#projet div {
+    margin: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 25px;
+    /* Background Transparent */
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.6px);
+    -webkit-backdrop-filter: blur(9.6px);
+}
+
+#projet div h2 {
+    margin: 20px;
+}
+
+#projet div ul {
+    list-style: none;
+}
+
+#projet div ul li {
+    margin: 20px;
+}
+
+#projet div h1 {
+    display: none;
+}
+
+#projet div ul li a {
+    color: white;
+}
