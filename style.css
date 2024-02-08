@@ -3,9 +3,10 @@ body {
     margin: 0; /*Pour enlever les marges*/
     padding: 0; /*Pour enlever les paddings*/
     box-sizing: border-box; /*Pour que les éléments soient bien dimensionnés*/
-    background-color: BLue; /*Pour que le fond soit noir*/
+    background: rgb(0,255,244);
+    background: linear-gradient(90deg, rgba(0,255,244,1) 0%, rgba(0,0,255,1) 100%);
     color: white; /*Pour que le texte soit blanc*/
-    overflow: auto; /*Pour que le scroll soit utilisable*/
+    overflow-x: hidden; /*Pour que le scroll soit utilisable*/
 }
 
 ::-webkit-scrollbar {
@@ -112,6 +113,13 @@ main {
     flex-direction: column; /* Align items horizontally */
 }
 
+#Introduction img {
+    width: 200px; /*Pour que l'image ait une largeur de 200px*/
+    height: 255px; /*Pour que l'image ait une hauteur de 200px*/
+    border-radius: 35%; /*Pour que l'image soit un cercle*/
+    margin-bottom: 20px; /*Pour que l'image soit espacée de 20px en bas*/
+}
+
 #Introduction h1 {
     text-align: center; /* Center the h1 */
 }
@@ -209,18 +217,8 @@ main {
     border-radius: 3px 0 0 3px;
 }
 
-/* Fading animation */
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-  
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
-
 /* FIn : SLideShow */
+
 #Profil .GlassBackground p {
     font-size: 20px;
     margin: 30px;
@@ -237,6 +235,175 @@ main {
     align-items: center; /*Pour que les éléments soient centrés verticalement*/
     flex-direction: column; /*Pour que les éléments soient alignés horizontalement*/
 }
+
+/* Btn */
+
+.cv_btn {
+    background-color: #fff;
+    border-radius: 25px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 14px;
+    height: 48px;
+    padding: 2px 24px;
+    z-index: 0;
+}
+
+.cv_btn a {
+    text-decoration: none;
+    color: blue;
+}
+
+/* Section BTS SIO */
+
+#bts_sio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    text-align: center;
+    border-radius: 25px;
+    /* Background Transparent */
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.6px);
+    -webkit-backdrop-filter: blur(9.6px);
+}
+
+#bts_sio div div h1 {
+    display: none;
+}
+
+.Titre {
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+.OPTION {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.SISR {
+    border: 3px solid #2626ff;
+    border-radius: 25px;
+    width: 509px;
+    padding: 30px;
+    margin: 20px 0px;
+    text-align: start;
+}
+
+.SLAM {
+    border:  3px solid rgb(38,231,246);
+    border-radius: 25px;
+    width: 509px;
+    padding: 30px;
+    margin: 20px 0px;
+    text-align: start;
+}
+
+.SISR:hover {
+    cursor: default;
+    border:  3px solid #ffffff;
+}
+
+.SLAM:hover {
+    cursor: default;
+    border:  3px solid #ffffff;
+}
+
+#bts_sio div div h2 {
+    padding-top: 20px;
+}
+
+/* Section formation */
+
+#formation {
+    width: 100vw; /*Prend toute la longeur de l'écran*/
+    height: 100vh; /*Prend toute la hauteur de l'écran*/
+}
+
+#formation h1 {
+    display: none;
+}
+
+.formation {
+    display: flex; /*Pour que les éléments soient alignés horizontalement*/
+    justify-content: center; /*Pour que les éléments soient centrés horizontalement*/
+    align-items: center; /*Pour que les éléments soient centrés verticalement*/
+    flex-direction: column; /*Pour que les éléments soient alignés horizontalement*/
+    border-radius: 30px;
+    margin: 50px;
+    /* Background Transparent */
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.6px);
+    -webkit-backdrop-filter: blur(9.6px);
+}
+
+.formation div {
+    text-align: center;
+    margin: 10px;
+}
+
+.formation .ecole {
+    display: flex;
+    justify-content: center; /* Aligns the elements with space between them */
+    align-items: center;
+    flex-direction: row;
+}
+
+.formation .ecole h3 {
+    margin: 20px;
+}
+
+.formation .Linkedin {
+    display: flex;
+    justify-content: center; /* Aligns the elements with space between them */
+    align-items: center;
+    flex-direction: row;
+}
+
+.formation .Linkedin h3 {
+    margin: 20px;
+}
+
+#formation h1 {
+    display: none;
+}
+
+.formation h2 {
+    margin-top: 20px;
+}
+
+.formation .ecole h3 a {
+    text-decoration: none;
+    color: blue;
+}
+
+.formation .Linkedin h3 a {
+    text-decoration: none;
+    color: blue;
+}
+
+/* Section Projet */
+
+#projet {
+    width: 100vw; /*Prend toute la longeur de l'écran*/
+    height: 100vh; /*Prend toute la hauteur de l'écran*/
+}
+
+#projet div h1 {
+    display: none;
+}
+
+#projet div ul li a {
+    text-decoration: none;
+    color: blue;
+} 
 
 /* Section Contact */
 
@@ -285,69 +452,4 @@ main {
 
 #Contact div h4 a {
     font-size: 30px;
-}
-
-/*  */
-
-#bts_sio {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px;
-    text-align: center;
-    border-radius: 25px;
-    /* Background Transparent */
-    background: rgba(255, 255, 255, 0.15);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(9.6px);
-    -webkit-backdrop-filter: blur(9.6px);
-}
-
-.Titre{
-    font-size: 25px;
-}
-.OPTION{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.SISR{
-    border: 3px solid #81b7e9;
-    border-radius: 25px;
-    width: 509px;
-    padding: 30px;
-    margin: 20px 0px;
-    text-align: start;
-}
-.SLAM{
-    border:  3px solid #81b7e9;
-    border-radius: 25px;
-    width: 509px;
-    padding: 30px;
-    margin: 20px 0px;
-    text-align: start;
-}
-
-.section-heading {
-    padding-top: 20px;
-}
-
-/*  */
-
-.cv_btn {
-    background-color: #fff;
-    border-radius: 25px;
-    border-style: none;
-    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
-    box-sizing: border-box;
-    cursor: pointer;
-    font-size: 14px;
-    height: 48px;
-    padding: 2px 24px;
-    z-index: 0;
-}
-
-.cv_btn a {
-    text-decoration: none;
-    color: blue;
 }
