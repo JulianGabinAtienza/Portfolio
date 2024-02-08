@@ -12,7 +12,7 @@
 #Introduction img {
     width: 200px; /*Pour que l'image ait une largeur de 200px*/
     height: 255px; /*Pour que l'image ait une hauteur de 200px*/
-    border-radius: 35%; /*Pour que l'image soit un cercle*/
+    border-radius: 20%; /*Pour que l'image soit un cercle*/
     margin-bottom: 20px; /*Pour que l'image soit espacée de 20px en bas*/
 }
 
