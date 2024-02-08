@@ -1,0 +1,353 @@
+body {
+    font-family: 'Roboto', sans-serif; /*Pour que le texte soit en Roboto*/
+    margin: 0; /*Pour enlever les marges*/
+    padding: 0; /*Pour enlever les paddings*/
+    box-sizing: border-box; /*Pour que les éléments soient bien dimensionnés*/
+    background-color: BLue; /*Pour que le fond soit noir*/
+    color: white; /*Pour que le texte soit blanc*/
+    overflow: auto; /*Pour que le scroll soit utilisable*/
+}
+
+::-webkit-scrollbar {
+    width: 0; /* Hide the scrollbar */
+}
+
+h2 {
+    margin-block-start: 0; /*Pour enlever les marges*/
+    margin-block-end: 0; /*Pour enlever les marges*/
+}
+
+h3 {
+    margin-block-start: 0; /*Pour enlever les marges*/
+    margin-block-end: 0; /*Pour enlever les marges*/
+}
+
+/* Header */
+/* A faire : ajouter un blur */
+
+header {
+    position: fixed; /*Pour que le header soit fixe*/
+    top: 0; /*Pour que le header soit en haut*/
+    left: 0; /*Pour que le header soit à gauche*/
+    width: 100vw; /*Prend toute la longeur de l'écran*/
+    z-index: 1000; /*Pour être sûr que le header soit au dessus de tout*/
+    background-color: transparent; /*Pour que le header soit transparent*/
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /*Pour ajouter une ombre*/
+}
+
+header a {
+    text-decoration: none; /*Pour enlever le soulignement des liens*/
+    color: white; /*Pour que les liens soient blanc*/
+}
+
+header h1 {
+    display: flex; /*Pour que les éléments soient alignés horizontalement*/
+    flex-direction: row; /*Pour que les éléments soient alignés horizontalement*/
+    margin-left: 10px; /*Pour que le titre se décale de 10px à gauche*/
+}
+
+header h1 a {
+    margin-left: 1.5rem; /*Pour enlever les marges*/
+}
+
+header nav {
+    display: flex; /*Pour que les éléments soient alignés horizontalement*/
+    justify-content: space-between; /*Pour que les éléments soient espacés de manière égale*/
+    align-items: center; /*Pour que les éléments soient alignés verticalement*/
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.6px);
+    -webkit-backdrop-filter: blur(9.6px);
+}
+
+header nav ul {
+    display: flex; /*Pour que les éléments soient alignés horizontalement*/
+    list-style: none; /*Pour enlever les points du ul li*/
+}
+
+header nav ul li {
+    margin: 0 1rem; /*Pour que les éléments soient espacés de 1rem*/
+}
+
+/* Début : CSS : quand hover sur un lien de la nav, une ligne apprait en dessous */
+
+header nav ul li a {
+    position: relative; /*Pour que les éléments soient positionnés de manière relative*/
+}
+
+header nav ul li a::after {
+    content: ''; /*Pour ajouter du contenu*/
+    position: absolute; /*Pour que les éléments soient positionnés de manière absolue*/
+    left: 0; /*Pour que les éléments soient à gauche*/
+    bottom: -5px; /*Pour que les éléments soient en bas de 2px*/
+    width: 100%; /*Pour que les éléments prennent toute la largeur*/
+    height: 3px; /*Pour que les éléments aient une hauteur de 2px*/
+    background-color: white; /*Pour que les éléments soient de couleur #030921*/
+    transform: scaleX(0); /*Pour que les éléments soient cachés*/
+    transition: transform 0.6s ease-in-out; /*Pour que les éléments apparaissent en 0.6s avec un effet ease-in*/
+}
+
+header nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+/* Fin : CSS */
+
+/* Main */
+
+main {
+    width: 100vw; /*Prend toute la longeur de l'écran*/
+    height: 100vw; /*Prend toute la hauteur de l'écran*/
+}
+
+/* Section Intro */
+
+#Introduction {
+    width: 100vw; /*Prend toute la longeur de l'écran*/
+    height: 100vh; /*Prend toute la hauteur de l'écran*/
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Align items horizontally */
+}
+
+#Introduction h1 {
+    text-align: center; /* Center the h1 */
+}
+
+/* Section Profil */
+
+#Profil {
+    width: 100vw; /*Prend toute la longeur de l'écran*/
+    height: 100vh; /*Prend toute la hauteur de l'écran*/
+    margin: 0;
+    display: flex; /*Pour que les éléments soient alignés horizontalement*/
+    justify-content: center; /*Pour que les éléments soient centrés horizontalement*/
+    align-items: center; /*Pour que les éléments soient centrés verticalement*/
+    flex-direction: column; /*Pour que les éléments soient alignés horizontalement*/
+}
+
+#Profil .GlassBackground {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    /* Background Transparent */
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.6px);
+    -webkit-backdrop-filter: blur(9.6px);
+}
+
+#Profil .GlassBackground div .Compétences {
+    display: flex; /*Pour que les éléments soient alignés horizontalement*/
+    justify-content: center; /*Pour que les éléments soient centrés horizontalement*/
+    align-items: center; /*Pour que les éléments soient centrés verticalement*/
+    flex-direction: column; /*Pour que les éléments soient alignés horizontalement*/
+}
+
+#Profil div h1 {
+    display: none;
+}
+
+#Profil div h2 {
+    margin-top: 20px;
+}
+
+#Profil div h3 {
+    margin-top: 20px;
+}
+
+#Profil div .Language h3 {
+    margin-bottom: 20px;
+}
+
+/* Début : SlideShow */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    display: flex; /* Add this line */
+    flex-direction: row; /* Add this line */
+}
+  
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+  
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 96;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+/* Position the "next button" to the right */
+.prev {
+    right: 350px;
+}
+
+.next {
+    left: 350px;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* FIn : SLideShow */
+#Profil .GlassBackground p {
+    font-size: 20px;
+    margin: 30px;
+    text-align: center;
+}
+
+#Profil .GlassBackground div h2 {
+    text-align: center;
+}
+
+.Language {
+    display: flex; /*Pour que les éléments soient alignés horizontalement*/
+    justify-content: center; /*Pour que les éléments soient centrés horizontalement*/
+    align-items: center; /*Pour que les éléments soient centrés verticalement*/
+    flex-direction: column; /*Pour que les éléments soient alignés horizontalement*/
+}
+
+/* Section Contact */
+
+#Contact {
+    width: 100vw; /*Prend toute la longeur de l'écran*/
+    height: 100vh; /*Prend toute la hauteur de l'écran*/
+    margin: 0;
+    display: flex; /*Pour que les éléments soient alignés horizontalement*/
+    justify-content: center; /*Pour que les éléments soient centrés horizontalement*/
+    align-items: center; /*Pour que les éléments soient centrés verticalement*/
+    flex-direction: column; /*Pour que les éléments soient alignés horizontalement*/
+}
+
+#Contact div {
+    display: flex; /*Pour que les éléments soient alignés horizontalement*/
+    justify-content: center; /*Pour que les éléments soient centrés horizontalement*/
+    align-items: center; /*Pour que les éléments soient centrés verticalement*/
+    flex-direction: column; /*Pour que les éléments soient alignés horizontalement*/
+    margin-top: 80px;
+    width: 40rem;
+    height: 35rem;
+    border-radius: 30px;
+    /* Background Transparent */
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.6px);
+    -webkit-backdrop-filter: blur(9.6px);
+}
+
+#Contact div h1 {
+    display: none;
+}
+
+#Contact div a {
+    text-decoration: none;
+    color: white;
+}
+
+#Contact div h3 {
+    margin: 20px;
+}
+
+#Contact div h3 a {
+    font-size: 55px;
+}
+
+#Contact div h4 a {
+    font-size: 30px;
+}
+
+/*  */
+
+#bts_sio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    text-align: center;
+    border-radius: 25px;
+    /* Background Transparent */
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.6px);
+    -webkit-backdrop-filter: blur(9.6px);
+}
+
+.Titre{
+    font-size: 25px;
+}
+.OPTION{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.SISR{
+    border: 3px solid #81b7e9;
+    border-radius: 25px;
+    width: 509px;
+    padding: 30px;
+    margin: 20px 0px;
+    text-align: start;
+}
+.SLAM{
+    border:  3px solid #81b7e9;
+    border-radius: 25px;
+    width: 509px;
+    padding: 30px;
+    margin: 20px 0px;
+    text-align: start;
+}
+
+.section-heading {
+    padding-top: 20px;
+}
+
+/*  */
+
+.cv_btn {
+    background-color: #fff;
+    border-radius: 25px;
+    border-style: none;
+    box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 14px;
+    height: 48px;
+    padding: 2px 24px;
+    z-index: 0;
+}
+
+.cv_btn a {
+    text-decoration: none;
+    color: blue;
+}
