@@ -23,6 +23,10 @@
     -webkit-backdrop-filter: blur(9.6px);
 }
 
+#Profil .GlassBackground div h2 {
+    margin-bottom: 20px;
+}
+
 #Profil .GlassBackground div .Compétences {
     display: flex; /*Pour que les éléments soient alignés horizontalement*/
     justify-content: center; /*Pour que les éléments soient centrés horizontalement*/
@@ -56,10 +60,14 @@
     flex-direction: row; /* Add this line */
 }
   
+.slideshow-container a:hover {
+    border-radius: 9px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
 /* Hide the images by default */
 .mySlides {
     display: none;
-    margin-top: 20px;
     margin-left: 10px;
     margin-right: 10px;
 }

@@ -21,7 +21,9 @@
 }
 
 @media screen and (max-width: 920px){
-    
+    #Introduction h1 {
+        margin: 20px;
+    }
 }
 
 @media screen and (min-width: 920px){
