@@ -28,25 +28,11 @@
     margin: 10px;
 }
 
-.formation .ecole {
-    display: flex;
-    justify-content: center; /* Aligns the elements with space between them */
-    align-items: center;
-    flex-direction: row;
-}
-
-.formation .ecole h3 {
+.formation .ecole li {
     margin: 20px;
 }
 
-.formation .Linkedin {
-    display: flex;
-    justify-content: center; /* Aligns the elements with space between them */
-    align-items: center;
-    flex-direction: row;
-}
-
-.formation .Linkedin h3 {
+.formation .Linkedin li {
     margin: 20px;
 }
 
@@ -58,12 +44,20 @@
     margin-top: 20px;
 }
 
-.formation .ecole h3 a {
+.formation ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+.formation .ecole li a {
     text-decoration: none;
     color: blue;
 }
 
-.formation .Linkedin h3 a {
+.formation .Linkedin li a {
     text-decoration: none;
     color: blue;
 }
