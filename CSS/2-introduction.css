@@ -19,3 +19,11 @@
 #Introduction h1 {
     text-align: center; /* Center the h1 */
 }
+
+@media screen and (max-width: 920px){
+    
+}
+
+@media screen and (min-width: 920px){
+    
+}

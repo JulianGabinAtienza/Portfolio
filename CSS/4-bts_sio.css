@@ -60,3 +60,22 @@
 #bts_sio div div h2 {
     padding-top: 20px;
 }
+
+@media screen and (max-width: 920px){
+    #bts_sio {
+        margin: 0;
+    }
+
+    .SLAM, .SISR {
+        width: 100%;
+        border: transparent;
+    }
+
+    .SLAM:hover, .SISR:hover {
+        border: transparent;
+    }
+}
+
+@media screen and (min-width: 920px){
+    
+}

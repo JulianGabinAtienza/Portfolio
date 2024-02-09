@@ -61,3 +61,20 @@
     text-decoration: none;
     color: blue;
 }
+
+@media screen and (max-width: 1060px){
+    .formation {
+        margin: 0;
+    }
+
+    .formation ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 920px){
+    
+}

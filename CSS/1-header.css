@@ -43,6 +43,15 @@ header nav ul {
 
 header nav ul li {
     margin: 0 1rem; /*Pour que les éléments soient espacés de 1rem*/
+    display: flex; /*Pour que les éléments soient alignés horizontalement*/
+    justify-content: space-between; /*Pour que les éléments soient espacés de manière égale*/
+    align-items: center;
+}
+
+header nav ul li img {
+    display: flex; /*Pour que les éléments soient alignés horizontalement*/
+    justify-content: space-between; /*Pour que les éléments soient espacés de manière égale*/
+    align-items: center;
 }
 
 /* Début : CSS : quand hover sur un lien de la nav, une ligne apprait en dessous */
@@ -68,3 +77,22 @@ header nav ul li a:hover::after {
 }
 
 /* Fin : CSS */
+
+@media screen and (max-width: 920px){
+    header nav ul {
+        display: none; /* Hide the navigation menu */
+    }
+
+    header nav #burger_menu {
+        display: flex; /* Show the burger menu */
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+    }
+}
+
+@media screen and (min-width: 920px){
+    header nav #burger_menu {
+        display: none; /* Hide the burger menu */
+    }
+}
