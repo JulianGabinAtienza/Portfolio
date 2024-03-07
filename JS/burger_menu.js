@@ -5,7 +5,7 @@ const menu = document.querySelector('#menu');
 // Add event listener to the burger menu button
 burger_menu.addEventListener('click', () => {
     // Toggle the 'active' class on the menu
-    if (menu.style.display === 'none' || menu.style.display === '') {
+    if (menu.style.display === 'none') {
         menu.style.display = 'flex';
         menu.style.flexDirection = 'column';
         burger_menu.style.display = 'none';
@@ -30,10 +30,3 @@ function clickOutsideMenu(event) {
         closeMenu();
     }
 }
-
-// Handle clicks on links inside the menu
-menu.addEventListener('click', (event) => {
-    if (event.target.tagName === 'A') {
-        closeMenu();
-    }
-});
