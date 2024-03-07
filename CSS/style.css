@@ -295,14 +295,18 @@ header nav ul li a:hover::after {
     box-sizing: border-box;
     cursor: pointer;
     font-size: 14px;
-    height: 48px;
-    padding: 2px 24px;
+    display: inline-block;
+    height: auto;
     z-index: 0;
+    /* Adjust padding to make it thicker */
+    padding: 8px 24px;
 }
 
 .cv_btn a {
+    display: block;
     text-decoration: none;
     color: blue;
+    padding: 14px 24px;
 }
 
 @media screen and (max-width: 920px){
@@ -459,6 +463,22 @@ header nav ul li a:hover::after {
     color: blue;
 }
 
+.certifications {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Three items per row */
+    gap: 20px; /* Gap between items */
+}
+
+.certifications ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.certifications ul li {
+    margin: 20px;
+}
+
 @media screen and (max-width: 1060px){
     .formation {
         margin: 0;
@@ -473,7 +493,11 @@ header nav ul li a:hover::after {
 }
 
 @media screen and (min-width: 920px){
-    
+    .certifications ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* Three items per row */
+        gap: 20px; /* Gap between items */
+    }
 }
 
 /* Section Projet */
@@ -516,7 +540,9 @@ header nav ul li a:hover::after {
 }
 
 @media screen and (max-width: 920px){
-    
+    #section_projet {
+        padding-top: 400px;
+    }
 }
 
 @media screen and (min-width: 920px){
