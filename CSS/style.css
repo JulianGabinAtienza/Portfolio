@@ -110,15 +110,13 @@ header nav ul li a:hover::after {
 
 /* Fin : CSS */
 
-@media screen and (max-width: 640px){
-    body {
-        overflow-y: none;
-    } 
-}
-
 @media screen and (max-width: 920px){
     header nav ul {
         display: none; /* Hide the navigation menu */
+    }
+
+    header nav ul li {
+        margin-top: 10px;
     }
 
     header nav #burger_menu {
