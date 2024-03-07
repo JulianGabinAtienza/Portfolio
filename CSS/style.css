@@ -194,13 +194,6 @@ header nav ul li a:hover::after {
     margin-bottom: 20px;
 }
 
-#Profil .GlassBackground div .Compétences {
-    display: flex; /*Pour que les éléments soient alignés horizontalement*/
-    justify-content: center; /*Pour que les éléments soient centrés horizontalement*/
-    align-items: center; /*Pour que les éléments soient centrés verticalement*/
-    flex-direction: column; /*Pour que les éléments soient alignés horizontalement*/
-}
-
 #Profil div h1 {
     display: none;
 }
@@ -217,55 +210,6 @@ header nav ul li a:hover::after {
     margin-bottom: 20px;
 }
 
-/* Début : SlideShow */
-
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-    display: flex; /* Add this line */
-    flex-direction: row; /* Add this line */
-}
-  
-.slideshow-container a:hover {
-    border-radius: 9px;
-    background-color: rgba(255, 255, 255, 0.2);
-    color: white;
-}
-/* Hide the images by default */
-.mySlides {
-    display: none;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-  
-/* Next & previous buttons */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: 96;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-  
-/* Position the "next button" to the right */
-.prev {
-    right: 350px;
-}
-
-.next {
-    left: 350px;
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
 /* FIn : SLideShow */
 
 #Profil .GlassBackground p {
@@ -276,6 +220,19 @@ header nav ul li a:hover::after {
 
 #Profil .GlassBackground div h2 {
     text-align: center;
+}
+
+.Compétences {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(96px, 1fr)); /* Automatically fit items with a minimum width of 96px */
+    gap: 10px; /* Adjust gap between grid items as needed */
+    justify-content: center; /* Center grid items horizontally */
+    align-items: center; /* Center grid items vertically */
+}
+
+.Compétences img {
+    max-width: 100%; /* Ensure images don't exceed container width */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .Language {
@@ -299,14 +256,14 @@ header nav ul li a:hover::after {
     height: auto;
     z-index: 0;
     /* Adjust padding to make it thicker */
-    padding: 8px 24px;
+    padding: 5px 24px;
 }
 
 .cv_btn a {
     display: block;
     text-decoration: none;
     color: blue;
-    padding: 14px 24px;
+    padding: 5px 24px;
 }
 
 @media screen and (max-width: 920px){
