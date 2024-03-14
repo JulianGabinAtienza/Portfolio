@@ -281,7 +281,7 @@ header nav ul li a:hover::after {
 
 /* Btn */
 
-.cv_btn {
+.btn {
     background-color: white;
     border-radius: 25px;
     border-style: none;
@@ -296,7 +296,7 @@ header nav ul li a:hover::after {
     padding: 5px 24px;
 }
 
-.cv_btn a {
+.btn a {
     display: block;
     padding: 5px 24px;
 }
