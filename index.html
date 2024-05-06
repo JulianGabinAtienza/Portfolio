@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         <link rel="stylesheet" href="CSS/style.css">
         <link rel="stylesheet" href="CSS/root.css">
+        <link rel="stylesheet" href="CSS/sidenav.css">
 
         <title>Portfolio de Julian Atienza</title>
     </head>
@@ -30,7 +31,19 @@
                     <li><a href="#tableau">Tableau</a></li> -->
                     <li><a href="#Contact">Contact</a></li>
                 </ul>
-                <img id="burger_menu" src="images/burger_menu.png" style="width: 30px;">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#">Home</a>
+                    <a href="#section_profil">Profil</a>
+                    <a href="#section_bts_sio">BTS SIO</a>
+                    <a href="#section_formation">Formation</a>
+                    <a href="#section_projet">Projet</a>
+                    <!-- <a href="#entreprise">Entreprise</a>
+                    <a href="#veille">Veille</a>
+                    <a href="#tableau">Tableau</a> -->
+                    <a href="#Contact">Contact</a>
+                </div>
+                <span class="burgerMenu" style="font-size:30px;cursor:pointer; padding-right:10px;" onclick="openNav()">&#9776;</span>
             </nav>
         </header>
         <main>
@@ -150,7 +163,8 @@
                             <li><a class="btn" href="https://www.linkedin.com/learning/certificates/465a69ef2f2c04fbf838e8fadcb32388831a2220c91725c0458f74f3f921c98e?u=57065257" target="_blank">L'essentiel de C# Unity pour le développement de jeux vidéo</a></li>
                             <li><a class="btn" href="https://www.linkedin.com/learning/certificates/482d7c36cea53dcb715dadf9fc13bc6d04e782de0f4f16c083a9fad54b8408b2?u=57065257" target="_blank">Se préparer au métier de développeur/ développeuse par Microsoft et LinkedIn</a></li>
                         </ul>
-                        <div id="btn template" style="display: none;">
+                        <!-- template pour ajouter de nouveau certificat -->
+                        <div style="display: none;">
                             <li><a class="btn" href="" target="_blank"></a></li>
                         </div>
                     </div>                  
@@ -188,5 +202,5 @@
         </footer>
     </body>
 </html>
-<script src="JS/burger_menu.js"></script>
+<script src="JS/sidenav.js"></script>
 <script src="JS/backgroundColor.js"></script>
