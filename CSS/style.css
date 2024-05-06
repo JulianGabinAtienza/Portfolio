@@ -144,18 +144,11 @@ header nav ul li a:hover::after {
     header nav ul li {
         margin-top: 10px;
     }
-
-    header nav #burger_menu {
-        display: flex; /* Show the burger menu */
-        justify-content: center;
-        align-items: center;
-        margin-right: 10px;
-    }
 }
 
 @media screen and (min-width: 920px){
-    header nav #burger_menu {
-        display: none; /* Hide the burger menu */
+    .burgerMenu {
+        display: none;
     }
 }
 
